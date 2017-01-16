@@ -1,0 +1,64 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 15, 2017, 5:52:24 PM
+    Author     : lee
+*/
+
+#headerBar {
+    width: 75%;
+    margin: auto;
+    height: auto;
+}
+
+#addNoteButton {
+    background-color: #3498db;
+    color: white;
+    
+    height: 35px;
+    width: 100px;
+    
+    box-shadow: 0px 1px 8px #6a6c70;
+
+    border: 0;
+    
+    margin-right: 12px;
+    margin-top: 12px;
+    
+    border-radius: 3px;
+}
+
+#removeNoteButton {
+    background-color: white;
+    
+    height: 35px;
+    width: 100px;
+    
+    box-shadow: 0px 1px 8px darkgray;
+
+    border: 0;
+    
+    margin-right: 12px;
+    margin-top: 12px;
+    
+    border-radius: 3px;
+}
+
+.listItem {
+    color: red;
+    background-color: #ecf0f1;
+    box-shadow: 0px 1px 8px darkgray;
+    
+    height: 50px;
+    width: 75%;
+    margin: auto;
+
+    line-height: 50px;
+    
+    padding-left: 12px;
+    border-radius: 3px;
+
+}
