@@ -21,7 +21,7 @@ and open the template in the editor.
     height: 35px;
     width: 100px;
     
-    box-shadow: 0px 1px 8px #6a6c70;
+    box-shadow: 0px 1px 8px #3498db;
 
     border: 0;
     
@@ -32,12 +32,13 @@ and open the template in the editor.
 }
 
 #removeNoteButton {
-    background-color: white;
+    color: white;
+    background-color: #e74c3c;
     
     height: 35px;
     width: 100px;
-    
-    box-shadow: 0px 1px 8px darkgray;
+        
+    box-shadow: 0px 1px 8px #e74c3c;
 
     border: 0;
     
@@ -47,18 +48,36 @@ and open the template in the editor.
     border-radius: 3px;
 }
 
+#addNoteMessage {
+    height: 31px;
+    width: 50%;
+    
+    border-style: solid;
+    border-width: 1px;
+    border-color: #3498db;
+    border-radius: 3px;
+    
+    box-shadow: 0px 1px 6px darkgray;
+    padding-left: 12px;
+    padding-right: 12px;
+    
+}
+
 .listItem {
-    color: red;
-    background-color: #ecf0f1;
+    color: black;
+    background-color: white;
     box-shadow: 0px 1px 8px darkgray;
     
-    height: 50px;
+    height: auto;
     width: 75%;
     margin: auto;
-
+    
     line-height: 50px;
     
-    padding-left: 12px;
-    border-radius: 3px;
+    padding-left: 24px;
+    padding-right: 24px;
 
+    border-radius: 3px;
+    word-wrap: break-word;
+   
 }

@@ -4,24 +4,28 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
+
 <html>
 
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" type="text/css" href="index.css?" />
 
         <title>Todo List</title>
     </head>
     <body>
 
-        <form action="" method="post">       
+        <form action="index.php" method="post">       
 
 
             <div id="headerBar">
 
-                <button id="addNoteButton" type="submit" name="addNoteButton" >
-                    Add Note
-                </button>
+                <div id="headerRow">
+                    <button id="addNoteButton" type="submit" name="addNoteButton" >
+                        Add Note
+                    </button>
+                    <input id="addNoteMessage" name="addNoteMessage" type="text" placeholder="Leave a message...">
+                </div>
 
                 <button id="removeNoteButton" type="submit" name="removeNoteButton">
                     Remove Notes
@@ -29,66 +33,44 @@ and open the template in the editor.
 
             </div>
             <?php
-
-            function init_mysql(&$mysqlConnection, $databaseName, $tableName) {
-
-                echo("init");
-
-                $mysqlConnection->query("DROP DATABASE $databaseName");
-
-                $statement = "CREATE DATABASE IF NOT EXISTS $databaseName";
-                if ($mysqlConnection->query($statement) === FALSE) {
-                    echo ( "Error creating database: " . $mysqlConnection->error );
-                } else {
-                    echo ( "$dbName as set up!" );
-
-
-                    if ($mysqlConnection->select_db($tableName)) {
-                        
-                    }
-
-                    if ($mysqlConnection->query("CREATE TABLE IF NOT EXISTS $tableName ("
-                                    . "taskID INT AUTO_INCREMENT PRIMARY KEY,"
-                                    . "data VARCHAR(255) NOT NULL"
-                                    . ")") === TRUE) {
-
-
-
-                        $mysqlConnection->query("INSERT INTO $tableName (data) VALUES('I am an apple lord')");
-                    }
-                }
-            }
-
+            
+            require 'init_mysql.php';
+            
             $dbName = "taskList";
             $tableName = "tasks";
 
             $mysqlConnection = new mysqli("localhost", "root", "123");
 
-            //if ( !function_exists('init_mysql' ) ) {
             init_mysql($mysqlConnection, $dbName, $tableName);
-            //}
-
             if ($mysqlConnection->connect_error) {
                 echo("MYSQL connection refused: " . $mysqlConnection->connect_error);
             }
 
             if (isset($_POST["addNoteButton"])) {
-                $result = $mysqlConnection->query("SELECT data FROM $tableName");
-
-                $mysqlConnection->query("INSERT INTO $tableName (data) VALUES ('Seymore Butts')");
+                $message = $_POST["addNoteMessage" ];
+                
+                if ( $message != "" ) {
+                    $mysqlConnection->query("INSERT INTO $tableName (data) VALUES ('$message')");
+                }
+            } else if( isset( $_POST["removeNoteButton"] ) ) {
+                
+                foreach ($_POST['listItemArray'] AS $item) {
+                    $mysqlConnection->query( "DELETE FROM $tableName WHERE taskID = $item" );
+                }
             }
-//            } else if( isset( $_POST["removeNoteButton"] ) ) {
-//                
-//                //$mysqlConnection->commit();
-//            }
+                        
             // Update web page rows
-            $result = $mysqlConnection->query("SELECT data FROM $tableName");
+            $result = $mysqlConnection->query("SELECT taskID, data FROM $tableName");
+            
+            $i = 0;
             while ($result->num_rows != 0 && $row = ( $result->fetch_assoc() )) {
-                echo( "<div class='listItem'>"
-                . "<input type='checkbox' class='itemCheckBox'>"
+                echo( "<br><div class='listItem'>"
+                . "<input type='checkbox' class='itemCheckBox' name='listItemArray[]' value=$row[taskID]>"
                 . "$row[data]"
                 . "</input>"
                 . "</div>" );
+                
+                ++$i;
             }
 
             $mysqlConnection->commit();
