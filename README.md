@@ -82,5 +82,6 @@
 ## Class Diagram
 ![class_diagram_img](images/ClassDiagram.png?raw=true "Class Diagram")
 
-
+## Sequence Diagram
+![sequence_diagram_img](images/SequenceDiagram.png?raw=true "Sequence Diagram")
 
