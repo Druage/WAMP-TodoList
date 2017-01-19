@@ -85,5 +85,9 @@
 ## Sequence Diagram
 ![sequence_diagram_img](images/SequenceDiagram.png?raw=true "Sequence Diagram")
 
-## System Architecture
+## System Architecture Diagram
 ![sys_arch_img](images/SysArch.png?raw=true "System Architecture Diagram")
+
+## Data Flow Diagram
+![data_flow_img](images/DataFlow.png?raw=true "Data Flow Diagram")
+
