@@ -57,16 +57,16 @@
 **Summary:** The mysql database should not be initialized more than once. User data will be completely wiped out and
   the application stability will be compromised.
   
-**Prerequisites:**
-1. Install apache2 server.
-2. Install php
-3. Install mysql-server
+**Prerequisites:**  
+1. Install apache2 server.  
+2. Install php  
+3. Install mysql-server  
 
-**Steps:**
-1. Start the apache server
-2. Copy the Todo Application folder to the Linux folder **/var/www/html**.
-3. Visit **http://localhost:80/index.php**
-4. If there are no visible error messages within the console, the application has only initialized the database once. 
+**Steps:**  
+1. Start the apache server  
+2. Copy the Todo Application folder to the Linux folder **/var/www/html**.  
+3. Visit **http://localhost:80/index.php**  
+4. If there are no visible error messages within the console, the application has only initialized the database once.  
  
 **2.** 
 
