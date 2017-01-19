@@ -79,5 +79,8 @@
 ## ER-Diagram
 ![er_diagram_img](images/erdplus-diagram.png?raw=true "ER-Diagram")
 
+## Class Diagram
+![class_diagram_img](images/ClassDiagram.png?raw=true "Class Diagram")
+
 
 
