@@ -6,6 +6,7 @@ This project is a web page created with the LAMP stack and serves as a todo list
 1. Apache2 server
 2. MySQL
 3. Php development libraries
+4. (Optional) Netbeans IDE
 
 ##Deployment
 On the target system you will have to install all of the packages listed in the dependencies section, along with making sure that the apache2 server and MySQL server are listening on port 80, for the apache2 server, and port 3306 for the MySQL server. I recommend using Ubuntu for the Linux server, with Windows will work as well, as long as you know how to configure apache, MySQL, and Php on your system.
