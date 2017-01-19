@@ -13,7 +13,9 @@ Attached in the project is a [Screencast.mp4](./Screencast.mp4) file which goes 
 ##Deployment
 On the target system you will have to install all of the packages listed in the dependencies section, along with making sure that the apache2 server and MySQL server are listening on port 80, for the apache2 server, and port 3306 for the MySQL server. I recommend using Ubuntu for the Linux server, with Windows will work as well, as long as you know how to configure apache, MySQL, and Php on your system.
 
-For an in depth look at how to install the dependencies and set up the development environment, follow the steps located [here](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu)
+For an in depth look at how to install the dependencies and set up the development environment, follow the steps located [here](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu)  
+  
+If the Netbeans IDE was installed, you can import the project folder directly and it will automatically be imported and ready for development. Just make sure that you have the Php development files installed with the Netbeans IDE, or else you will not be able to properly add any new files to the project. The proper Netbeans download bundle is either the Php bundle or the All bundle located [here](https://netbeans.org/downloads/).
 
 ## Work Breakdown
 
