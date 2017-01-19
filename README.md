@@ -92,9 +92,31 @@
 3. Visit **http://localhost:80/index.php**  
 4. If there are no visible error messages within the console, the application has only initialized the database once.  
  
-**2.** 
+**2.** Notes will not be added if the user does not input a message in the text box. 
 
-**3.**
+**Summary:** When the user clicks on the "Add Note" button this will add in a note entry to the database, however, users that do not entry a message into the text box will not see their addition added to the database. This is to assure that database only contains valid data.
+
+**Prerequisites:**  
+1. Install prerequisities from test case 1.   
+
+**Steps:**  
+1. Launch the web page  
+2. Without entrying any data into the text box, click on the "Add Note" button  
+3. No note additions should visually show up. 
+
+**3.** If the user clicks on the "Remove Notes" button with multiple checked message checkboxes, the MYSQL database will delete all of them from the database.  
+
+**Summary:** The user needs to be able to complete batch deletions of different tasks. This will greatly reduce the ammount of work that the user will have to do and reduce server load.  
+
+**Prerequisites:**  
+1. Install prerequisities from test case 1.   
+
+**Steps:**  
+1. Launch the web page  
+2. Add more than one note to the Todo List web page  
+3. Check the checkbox of more than one note  
+4. All of the checked user messages should be deleted  
+5. None of the unchecked messages should have been deleted  
 
 ## Use Case Diagram
 
