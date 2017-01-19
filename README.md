@@ -38,6 +38,30 @@
 **Notes:** The basic web page along with CSS styling was easy to accomplish  
 **Issues:** None  
 
+**7.** Add Php scripting to the web page, supporting connections to MYSQL  
+**Estimated Time:** 2 hours  
+**Actual Time:** 4 hours  
+**Notes:** None  
+**Issues:** When I reorganized my php code, I set the wrong table and database name for the project, and it took me an hour worth of time before I figured out what the issue was. I also did not realize that the php script was being completely reloaded on every POST operation.  
+
+**8.** Connect the "Add Note" button up to Php in order to add a new entry to the MYSQL database.  
+**Estimated Time:** 30 minutes   
+**Actual Time:** 1 hour  
+**Notes:** I had to modify the Php script in order to check variable names inside of the _POST global variable.  
+**Issues:** None  
+
+**9.** Connect the "Remove Notes" button up to Php in order to remove entries to the MYSQL database.  
+**Estimated Time:** 15 minutes  
+**Actual Time:** 15 minutes  
+**Notes:** I used what I learned from hooking up the "Add Note" button, so this action was much quicker to implement.  
+**Issues:** None  
+
+**10.** Make the TextField change the notes message in MYSQL  
+**Estimated Time:** 30 minutes  
+**Actual Time:** 1 hour  
+**Notes:** I had to look up how to access input tag values from the _POST variable.  
+**Issues:** None  
+
 ## Functional Requirements
 
 * The MYSQL database must be valid and initialized when the user accesses the web page.
