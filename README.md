@@ -1,6 +1,8 @@
 # WAMP-TodoList
 
-This project is a web page created with the LAMP stack and serves as a todo list manager, keeping the user always up to date with their latest tasks.
+This project is a web page created with the LAMP stack and serves as a todo list manager, keeping the user always up to date with their latest tasks.  
+  
+Attached in the project is a [Screencast.mp4](./Screencast.mp4) file which goes over the basic usage of this application.
 
 ##Dependencies
 1. Apache2 server
