@@ -1,5 +1,43 @@
 # WAMP-TodoList
 
+## Work Breakdown
+
+**1.** Install and start up the MYSQL server  
+**Estimated Time:** 10 minutes  
+**Actual Time:** 5 minutes  
+**Notes:** I have set up MYSQL for other projects so I knew immediately what to do.  
+**Issues:** None  
+
+**2.** Install and start apache2 Linux server  
+**Estimated Time:** 20 minutes  
+**Actual Time:** 5 minutes  
+**Notes:** I followed the steps listed [here](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04) so the installation was smooth and painless  
+**Issues:** None  
+
+**3.** Install php development files  
+**Estimated Time:** 5 minutes  
+**Actual Time:** 2 minutes  
+**Notes:** I installed php via the Ubuntu software repository using apt-get, so the files were available.  
+**Issues**: None  
+
+**4.** Download the install Netbeans for Php development.  
+**Estimated Time**: 2 minutes  
+**Actual Time**: 30 minutes  
+**Notes:** I had initially installed Netbeans via the Ubuntu repository using apt-get but this lacked project files for php development. This caused me to visit the Netbeans official [website](https://netbeans.org/downloads/). I also have to modify the Netbeans configuration files so that the project used the correct port number for the web page to run.  
+**Issues:** Netbeans intalled via apt-get does not contain php development files, additional packages must be installed.
+
+**5.** Create a basic php web page and communicate with MYSQL  
+**Estimated Time:** 1 hour  
+**Actual Time:** 1 hour  
+**Notes:** Setting up a basic php script and connecting it to MYSQL was the easy part, hard parts were to come later!  
+**Issues:** Virtually none, php as a language was relatively easy and quick to learn, and I already know MYSQL.  
+
+**6.** Create a functioning HTML web page, providing hooks in for eventual php scripting.  
+**Estimated Time:** 3 hours  
+**Actual Time:** 1 hour  
+**Notes:** The basic web page along with CSS styling was easy to accomplish  
+**Issues:** None  
+
 ## Functional Requirements
 
 * The MYSQL database must be valid and initialized when the user accesses the web page.
