@@ -38,4 +38,8 @@
 
 ![use_case_img](images/UseCase.png?raw=true "Use Case Diagram")
 
+## ER-Diagram
+![er_diagram_img](images/erdplus-diagram.png?raw=true "ER-Diagram")
+
+
 
