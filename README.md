@@ -33,3 +33,9 @@
 **2.** 
 
 **3.**
+
+## Use Case Diagram
+
+![use_case_img](images/UseCase.png?raw=true "Use Case Diagram")
+
+
